@@ -1,0 +1,49 @@
+
+  
+
+<body>
+  
+
+
+
+<header>
+ 
+  <img src="assets/Images/Restaurantlogo.png" alt="My Image" id="myImage">
+
+ <nav>
+  <!-- <a tabindex="0"  (click)="homeClick()" class="nav-item">Home</a>
+  <a tabindex="0"  (click)="aboutClick()" class="nav-item">About</a>
+  <a tabindex="0"   (click)="contactClick()" class="nav-item">Contact</a> -->
+
+  <a *ngFor="let heading of headData"  [routerLink]="heading.path"  tabindex="0" class="nav-item" > {{ heading.label }}</a>  <!-- //For Directives -->
+  
+  <a *ngIf="isContactPage" href="https://www.instagram.com/ruchira" target="_blank" class="icon">   <!-- //ngif Directives -->
+    <i class="bi bi-instagram" style="padding: 40px; color: rgb(178, 56, 22);"></i>
+  </a>
+
+  <a *ngIf="isContactPage" href="https://www.youtube.com/@creativemediaproductionsin7689" target="_blank" class="icon">  <!-- //ngif Directives -->
+    <i class="bi bi-youtube fs-1" style="color: rgb(178, 56, 22);margin-left: -60px;" ></i>
+  </a>
+  
+  <a *ngIf="isContactPage" href="https://www.twitter.com/ruchi" target="_blank" class="icon">
+    <i class="bi bi-twitter" style="margin-left: -20px; color: rgb(178, 56, 22);"></i>
+  </a>
+
+  <a *ngIf="isContactPage" href="https://www.google.com/maps?q=Charminar"  target="_blank" class="icon">
+    <i class="bi bi-geo-alt-fill" style="margin-left: -20px; color: rgb(178, 56, 22);"></i>
+  </a>
+        
+   
+</nav>
+
+ 
+</header>
+  
+
+
+</body>
+
+
+<router-outlet></router-outlet>
+
+
