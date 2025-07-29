@@ -62,4 +62,20 @@ export class AppComponent {
     {
        this._router.navigate(['./vegstarter'])
     }  
+    nonVegBiryaniClick()
+    {
+      this._router.navigate(['./nonvegbiryani'])
+    }
+    nonVegStarterClick()
+    {
+      this._router.navigate(['./nonvegstarter'])
+    }
+    dessertsAndSnacksClick()
+    {
+      this._router.navigate(['./dessertsandsnacks'])
+    }
+    icecreamClick()
+    {
+      this._router.navigate(['./icecream'])
+    }
   }

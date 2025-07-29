@@ -14,6 +14,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { VegbiryaniComponent } from './component/vegbiryani/vegbiryani.component';
 import { VegstarterComponent } from './component/vegstarter/vegstarter.component';
+import { NonvegbiryaniComponent } from './component/nonvegbiryani/nonvegbiryani.component';
+import { NonvegstarterComponent } from './component/nonvegstarter/nonvegstarter.component';
+import { DessertsandsnacksComponent } from './component/dessertsandsnacks/dessertsandsnacks.component';
+import { IcecreamComponent } from './component/icecream/icecream.component';
+
 
 
 @NgModule({
@@ -28,6 +33,10 @@ import { VegstarterComponent } from './component/vegstarter/vegstarter.component
         BookingComponent,
         VegbiryaniComponent,
         VegstarterComponent,
+        NonvegbiryaniComponent,
+        NonvegstarterComponent,
+        DessertsandsnacksComponent,
+        IcecreamComponent,
         
    
   ],

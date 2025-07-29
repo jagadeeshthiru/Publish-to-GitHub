@@ -1,66 +1,51 @@
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 <body>
     
     <!-- <img src="../../../assets/Images/pexels-life-of-pix-67468 - Copy.jpg" alt=""> -->
-    <div id="main">
-        
-        <h1 >CONTACT</h1>
-        <h3 style="margin-top: -22px;">We would be happy to answer and serve you better</h3>
-    </div>
+  <div id="main"> 
+    <h1 >CONTACT</h1>
+    <h3 style="margin-top: -22px;">We would be happy to answer and serve you better</h3>
+  </div>
     <h1 class="message_heading">Send Us A Message</h1>
     <h4 class="message_heading1">keep in touch</h4>
-    <form [formGroup]="formGroup" (ngSubmit)="getclickIt()" action="">
-      
-        <input type="text" id="fname" formControlName="fname" placeholder="Enter your first name"  class="form-control">
-       
-        <input type="text" id="lname" formControlName="lname" placeholder="Enter your last name"  class="form-control">
-       <br>
-        <input type="tel" id="phone" formControlName="phone" placeholder="Enter your phone number"  class="form-control">
-
-        <input type="email" id="email" formControlName="email" placeholder="Enter your email"  class="form-control"> <br>
-
-        <textarea id="message" formControlName="message" rows="8" placeholder="Write your message here..."></textarea>
-        <br>
-            <button type="submit">Send</button>
+  <form [formGroup]="formGroup" (ngSubmit)="getclickIt()" action="">    
+    <input type="text" id="fname" formControlName="fname" placeholder="Enter your first name"  class="form-control">
+    <input type="text" id="lname" formControlName="lname" placeholder="Enter your last name"  class="form-control">
+    <br>
+    <input type="tel" id="phone" formControlName="phone" placeholder="Enter your phone number"  class="form-control">
+    <input type="email" id="email" formControlName="email" placeholder="Enter your email"  class="form-control"> <br>
+    <textarea id="message" formControlName="message" rows="8" placeholder="Write your message here..."></textarea>
+    <br>
+    <button type="submit">Send</button>
 
     </form>
-
-    <div class="awesome">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-         <div class="addressDiv">
-                  <i id="font1" class="fa-solid fa-location-dot"></i> 
-                  <i id="font2" class="fa-solid fa-phone"></i>
-                  <i id="font3" class="fa-solid fa-envelope"></i>
-           <p class="address-block">              
-                 <b >Address</b> <br>
-                 <span>Plot No: 21, </span> 
-                 <span>Hitech City Road, </span>
-                 <span> Madhapur,Hyderabad - 500081,</span> 
-                 <span>Telangana, India</span>
-            </p>
-             <p class="phone-block">
-                <b >phone</b> <br>
-              
-                 <span>+919347792133 </span> 
-                 <span>	040-23456789</span>
-                 <span>1800 3000 9009 </span>
-                 
-            </p>
-            <p class="mail-block">
-                <b >Email</b> <br>
-                 <span> ruchira.official@gmail.com</span>
-                 <span>ruchira.services@gmail.com</span>
-                    <span>ruchira.team@gmail.com</span>
-            </p>
-         </div>
-         <!-- <div class="phoneDiv">
-               <p>
-                    <i id="font2" class="fa-solid fa-phone"></i>
-                     
-                </p>
-         </div> -->
-           
-    </div>
-      
+  <div class="awesome">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <div class="addressDiv">
+        <i id="font1" class="fa-solid fa-location-dot"></i> 
+        <i id="font2" class="fa-solid fa-phone"></i>
+        <i id="font3" class="fa-solid fa-envelope"></i>
+      <p class="address-block">              
+        <b >Address</b> <br>
+        <span>Plot No: 21, </span> 
+        <span>Hitech City Road, </span>
+        <span> Madhapur,Hyderabad - 500081,</span> 
+        <span>Telangana, India</span>
+      </p>
+      <p class="phone-block">
+        <b >phone</b> <br>
+        <span>+919347792133 </span> 
+        <span>	040-23456789</span>
+        <span>1800 3000 9009 </span>  
+      </p>
+      <p class="mail-block">
+        <b >Email</b> <br>
+        <span> ruchira.official@gmail.com</span>
+        <span>ruchira.services@gmail.com</span>
+        <span>ruchira.team@gmail.com</span>
+      </p>
+    </div>         
+  </div>    
 </body>

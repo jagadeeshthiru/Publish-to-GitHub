@@ -8,8 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class BookingServiceService
 {
-   private apiUrl = 'http://localhost:8080/api/restaurantss';
-
+  private apiUrl = 'http://localhost:8080/api/restaurantss';    
   
   constructor(private http: HttpClient) {}
 
@@ -25,5 +24,17 @@ export class BookingServiceService
     return this.http.get<User[]>(`${this.apiUrl}/${foodId}`);
   }
 
+   getComboData(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/combo`);
+  }
+  getStarter(): Observable<any[]>
+  {
+    return this.http.get<any[]>(`${this.apiUrl}/starters`)
+  }
+ 
+  getDesserts(): Observable<any[]>
+  {
+    return this.http.get<any[]>(`${this.apiUrl}/Desserts`)
+  }
   
 }

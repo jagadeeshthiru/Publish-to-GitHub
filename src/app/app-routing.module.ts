@@ -9,6 +9,10 @@ import { MenuComponent } from './component/menu/menu.component';
 import { BookingComponent } from './component/booking/booking.component';
 import { VegbiryaniComponent } from './component/vegbiryani/vegbiryani.component';
 import { VegstarterComponent } from './component/vegstarter/vegstarter.component';
+import { NonvegbiryaniComponent } from './component/nonvegbiryani/nonvegbiryani.component';
+import { NonvegstarterComponent } from './component/nonvegstarter/nonvegstarter.component';
+import { DessertsandsnacksComponent } from './component/dessertsandsnacks/dessertsandsnacks.component';
+import { IcecreamComponent } from './component/icecream/icecream.component';
 
 
  
@@ -22,7 +26,11 @@ const routes: Routes = [
 { path: 'contact',component: ContactComponent},
 {path:'booking',component: BookingComponent},
 { path: 'vegbiryani', component:VegbiryaniComponent},
-{ path:'vegstarter', component:VegstarterComponent}
+{ path:'vegstarter', component:VegstarterComponent},
+{ path:'nonvegbiryani',component:NonvegbiryaniComponent},
+{ path:'nonvegstarter', component:NonvegstarterComponent},
+{ path:'dessertsandsnacks',component:DessertsandsnacksComponent},
+{ path:'icecream',component:IcecreamComponent}
 
 
 ];
